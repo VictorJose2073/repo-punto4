@@ -31,3 +31,6 @@ La entrega se considera valida cuando ambas pruebas (manual y automatizada) cump
 - Captura 2: docs/img/endpoint-health.png
 - Captura 3: docs/img/endpoint-dashboard.png
 - Log sugerido: salida de despliegue exitoso en Render, Vercel o AWS.
+
+## Nota de despliegue (Render Free)
+En el plan gratuito de Render existe cold start por inactividad; la primera respuesta puede presentar latencia adicional (hasta ~50 segundos).

@@ -74,6 +74,8 @@ Paso 5 - Verificar el endpoint
 - Acceder a: https://tu-app.onrender.com/api/dashboard
 - Verificar respuesta JSON con datos combinados.
 
+Nota: En Render Free puede existir cold start por inactividad, por lo que la primera respuesta puede tardar mas tiempo.
+
 ## 4. Repositorio y Pruebas
 
 ### Estructura recomendada
