@@ -30,7 +30,8 @@ La entrega se considera valida cuando ambas pruebas (manual y automatizada) cump
 - Captura 1: docs/img/endpoint-home.png
 - Captura 2: docs/img/endpoint-health.png
 - Captura 3: docs/img/endpoint-dashboard.png
-- Captura 4: docs/img/ostiachaval.png
+- Captura 4: docs/img/test-output.png
+- Captura 5: docs/img/ostiachaval.png
 - Log sugerido: salida de despliegue exitoso en Render, Vercel o AWS.
 
 ## Nota de despliegue (Render Free)
