@@ -30,6 +30,7 @@ La entrega se considera valida cuando ambas pruebas (manual y automatizada) cump
 - Captura 1: docs/img/endpoint-home.png
 - Captura 2: docs/img/endpoint-health.png
 - Captura 3: docs/img/endpoint-dashboard.png
+- Captura 4: docs/img/ostiachaval.png
 - Log sugerido: salida de despliegue exitoso en Render, Vercel o AWS.
 
 ## Nota de despliegue (Render Free)
@@ -44,3 +45,6 @@ Resumen del log observado en produccion:
 - Available at primary URL: https://repo-punto4.onrender.com.
 
 Este log confirma que el servicio compilo, arranco correctamente y quedo publicado en la URL de Render.
+
+Captura del log de despliegue:
+![Log de despliegue en Render](img/ostiachaval.png)
