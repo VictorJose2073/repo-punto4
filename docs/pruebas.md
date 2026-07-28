@@ -34,3 +34,13 @@ La entrega se considera valida cuando ambas pruebas (manual y automatizada) cump
 
 ## Nota de despliegue (Render Free)
 En el plan gratuito de Render existe cold start por inactividad; la primera respuesta puede presentar latencia adicional (hasta ~50 segundos).
+
+## Evidencia de despliegue en Render
+Resumen del log observado en produccion:
+- Build successful.
+- Running "npm start".
+- node src/server.js.
+- Your service is live.
+- Available at primary URL: https://repo-punto4.onrender.com.
+
+Este log confirma que el servicio compilo, arranco correctamente y quedo publicado en la URL de Render.
