@@ -1,9 +1,27 @@
 # Evidencia de Pruebas
 
-## Prueba 1: endpoint principal
-- Comando: `curl http://localhost:3000/api/dashboard`
-- Resultado esperado: status 200 y JSON con `ok: true`.
+## Objetivo
+Validar que el endpoint mashup responde correctamente y que la prueba automatizada de integracion pasa.
 
-## Prueba 2: prueba automatizada
-- Comando: `npm test`
-- Resultado esperado: 1 prueba aprobada.
+## Prueba manual de consumo
+Comando:
+
+curl http://localhost:3000/api/dashboard
+
+Resultado esperado:
+- Codigo HTTP 200
+- Campo ok en true
+- Objeto data con localData y externalData
+
+## Prueba automatizada
+Comando:
+
+npm test
+
+Salida esperada (resumen):
+- tests: 1
+- pass: 1
+- fail: 0
+
+## Criterio de aceptacion
+La entrega se considera valida cuando ambas pruebas (manual y automatizada) cumplen el resultado esperado.

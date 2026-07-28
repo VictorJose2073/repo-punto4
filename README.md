@@ -1,15 +1,43 @@
-# API Mashup - Repositorio de la Actividad
+
 
 ## 1. Arquitectura Mashup
-Esta aplicación expone un endpoint simple que combina datos propios del sistema con una fuente externa pública para demostrar una arquitectura mashup en una sola API.
+El endpoint GET /api/dashboard integra en una sola respuesta:
+- datos locales simulados de la aplicacion,
+- datos externos obtenidos desde JSONPlaceholder.
 
-### Flujo de trabajo
-- El servidor Express recibe solicitudes en `/api/dashboard`.
-- El controlador obtiene un dato local simulado.
-- También consume una API externa pública.
-- Ambos resultados se integran en una sola respuesta JSON.
+Flujo tecnico:
+1. El cliente consume GET /api/dashboard.
+2. El controlador construye localData.
+3. El controlador consulta la API externa.
+4. La API responde un JSON unificado con ambos resultados.
 
-### Estructura del proyecto
+## 2. Seguridad y Entorno (.env)
+Configuracion sensible gestionada con variables de entorno.
+
+- No se suben secretos al repositorio.
+- .env esta ignorado por git.
+- .env.example funciona como plantilla publica.
+
+Ejemplo minimo:
+
+PORT=3000
+EXTERNAL_API_URL=https://jsonplaceholder.typicode.com/todos/1
+
+## 3. Despliegue en nube
+Este proyecto puede desplegarse en Render, Railway o Vercel usando:
+
+- Build/Install: npm install
+- Start: npm start
+
+Pasos sugeridos:
+1. Conectar el repositorio publico en la plataforma PaaS.
+2. Definir variables de entorno (PORT y EXTERNAL_API_URL).
+3. Desplegar.
+4. Probar los endpoints /health y /api/dashboard.
+
+## 4. Repositorio y Pruebas
+
+### Estructura recomendada
 ```text
 repo-punto4/
 ├── src/
@@ -30,61 +58,15 @@ repo-punto4/
 └── README.md
 ```
 
-## 2. Seguridad y Entorno (.env)
-Las credenciales y configuraciones sensibles deben manejarse con variables de entorno.
+### Comandos principales
+- npm install
+- npm start
+- npm test
 
-### Recomendación
-- Crear un archivo `.env` localmente.
-- No subir claves ni secretos al repositorio.
-- Usar `.env.example` como plantilla pública.
+### Endpoints
+- GET /
+- GET /health
+- GET /api/dashboard
 
-### Ejemplo
-```env
-PORT=3000
-```
-
-## 3. Proceso de Despliegue en Nube
-La aplicación está preparada para ejecutarse con el script de inicio definido en `package.json`.
-
-### Pasos recomendados
-1. Subir el repositorio a GitHub.
-2. Crear un servicio en Render, Vercel o Railway.
-3. Configurar el comando de inicio como:
-   ```bash
-   npm start
-   ```
-4. Definir la variable `PORT` en la plataforma.
-5. Ejecutar la aplicación y verificar el endpoint `/api/dashboard`.
-
-## 4. Repositorio y Pruebas
-Este repositorio está pensado para presentarse como una solución organizada, con documentación y evidencia de pruebas.
-
-### Instalación
-```bash
-npm install
-```
-
-### Ejecución local
-```bash
-npm start
-```
-
-### Endpoints disponibles
-- `/`
-- `/health`
-- `/api/dashboard`
-
-### Pruebas
-```bash
-npm test
-```
-
-### Resultado esperado
-- Código HTTP: 200
-- Respuesta JSON con `ok: true`
-- Datos combinados de origen local y externo
-
-## Evidencia para entregar
-- Captura del endpoint en Postman, curl o navegador.
-- Captura del resultado de `npm test`.
-- Archivos de documentación en la carpeta `docs/`.
+### Evidencia
+Ver la documentacion en docs/pruebas.md para el registro de pruebas y salida esperada.
