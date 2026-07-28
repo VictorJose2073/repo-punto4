@@ -94,6 +94,7 @@ repo-punto4/
 │   │   ├── endpoint-home.png
 │   │   ├── endpoint-health.png
 │   │   ├── endpoint-dashboard.png
+│   │   └── ostiachaval.png
 │   ├── seguridad.md
 │   ├── despliegue.md
 │   └── pruebas.md
@@ -126,6 +127,7 @@ Guarda tus capturas en docs/img con estos nombres:
 - endpoint-home.png
 - endpoint-health.png
 - endpoint-dashboard.png
+- ostiachaval.png
 
 Luego se veran aqui:
 
@@ -134,3 +136,5 @@ Luego se veran aqui:
 ![Respuesta GET /health](docs/img/endpoint-health.png)
 
 ![Respuesta GET /api/dashboard](docs/img/endpoint-dashboard.png)
+
+![Log de despliegue en Render](docs/img/ostiachaval.png)
