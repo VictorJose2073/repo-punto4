@@ -2,6 +2,10 @@
 
 Repositorio publico preparado para evaluacion de una API mashup con pruebas de integracion y documentacion de soporte.
 
+## Estado de cumplimiento
+- [x] 3. Proceso de Despliegue Nube
+- [x] 4. Repositorio y Pruebas
+
 ## 1. Arquitectura Mashup
 El endpoint GET /api/dashboard integra en una sola respuesta:
 - datos locales simulados de la aplicacion,
@@ -46,10 +50,15 @@ git add .
 git commit -m "feat: mashup api ready"
 git push origin main
 
-Paso 2 - Crear un servicio en Render, Vercel o Railway
+Paso 2 - Crear un servicio en Render, Vercel o AWS
 
 - Conectar la cuenta de GitHub.
 - Seleccionar el repositorio repo-punto4.
+
+Opciones de plataforma:
+- Render: Web Service.
+- Vercel: Project con framework Other.
+- AWS: App Runner conectado a GitHub.
 
 Paso 3 - Configurar el comando de inicio
 
@@ -103,6 +112,11 @@ repo-punto4/
 
 ### Evidencia
 Ver la documentacion en docs/pruebas.md para el registro de pruebas y salida esperada.
+
+Reporte recomendado de pruebas:
+- Captura del endpoint /api/dashboard en ejecucion.
+- Captura de salida de npm test.
+- Log corto de despliegue exitoso en plataforma nube.
 
 ### Capturas en README
 Guarda tus capturas en docs/img con estos nombres:

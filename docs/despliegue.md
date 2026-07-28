@@ -20,10 +20,15 @@ git add .
 git commit -m "feat: mashup api ready"
 git push origin main
 
-### Paso 2 - Crear un servicio en Render, Vercel o Railway
+### Paso 2 - Crear un servicio en Render, Vercel o AWS
 
 - Conectar la cuenta de GitHub.
 - Seleccionar el repositorio repo-punto4.
+
+Opciones recomendadas:
+- Render: crear Web Service.
+- Vercel: crear Project (Other) y usar comandos de package.json.
+- AWS: crear servicio en App Runner con source desde GitHub.
 
 ### Paso 3 - Configurar el comando de inicio
 
@@ -38,3 +43,8 @@ git push origin main
 
 - Acceder a: https://tu-app.onrender.com/api/dashboard
 - Verificar respuesta JSON con datos combinados.
+
+Rutas equivalentes por plataforma:
+- Render: https://tu-app.onrender.com/api/dashboard
+- Vercel: https://tu-app.vercel.app/api/dashboard
+- AWS App Runner: https://tu-app.awsapprunner.com/api/dashboard
