@@ -27,6 +27,7 @@ Salida esperada (resumen):
 La entrega se considera valida cuando ambas pruebas (manual y automatizada) cumplen el resultado esperado.
 
 ## Evidencia visual y logs
-- Captura 1: docs/img/endpoint-dashboard.png
-- Captura 2: docs/img/test-output.png
+- Captura 1: docs/img/endpoint-home.png
+- Captura 2: docs/img/endpoint-health.png
+- Captura 3: docs/img/endpoint-dashboard.png
 - Log sugerido: salida de despliegue exitoso en Render, Vercel o AWS.

@@ -89,8 +89,9 @@ repo-punto4/
 │   └── app.test.js
 ├── docs/
 │   ├── img/
+│   │   ├── endpoint-home.png
+│   │   ├── endpoint-health.png
 │   │   ├── endpoint-dashboard.png
-│   │   └── test-output.png
 │   ├── seguridad.md
 │   ├── despliegue.md
 │   └── pruebas.md
@@ -120,11 +121,14 @@ Reporte recomendado de pruebas:
 
 ### Capturas en README
 Guarda tus capturas en docs/img con estos nombres:
+- endpoint-home.png
+- endpoint-health.png
 - endpoint-dashboard.png
-- test-output.png
 
 Luego se veran aqui:
 
-![Respuesta GET /api/dashboard](docs/img/endpoint-dashboard.png)
+![Respuesta GET /](docs/img/endpoint-home.png)
 
-![Resultado npm test](docs/img/test-output.png)
+![Respuesta GET /health](docs/img/endpoint-health.png)
+
+![Respuesta GET /api/dashboard](docs/img/endpoint-dashboard.png)
