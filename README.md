@@ -1,4 +1,6 @@
+# API Mashup - Entrega de Actividad
 
+Repositorio publico preparado para evaluacion de una API mashup con pruebas de integracion y documentacion de soporte.
 
 ## 1. Arquitectura Mashup
 El endpoint GET /api/dashboard integra en una sola respuesta:
@@ -49,6 +51,9 @@ repo-punto4/
 ├── tests/
 │   └── app.test.js
 ├── docs/
+│   ├── img/
+│   │   ├── endpoint-dashboard.png
+│   │   └── test-output.png
 │   ├── seguridad.md
 │   ├── despliegue.md
 │   └── pruebas.md
@@ -70,3 +75,14 @@ repo-punto4/
 
 ### Evidencia
 Ver la documentacion en docs/pruebas.md para el registro de pruebas y salida esperada.
+
+### Capturas en README
+Guarda tus capturas en docs/img con estos nombres:
+- endpoint-dashboard.png
+- test-output.png
+
+Luego se veran aqui:
+
+![Respuesta GET /api/dashboard](docs/img/endpoint-dashboard.png)
+
+![Resultado npm test](docs/img/test-output.png)
