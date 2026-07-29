@@ -118,10 +118,6 @@ repo-punto4/
 ### Evidencia
 Ver la documentacion en docs/pruebas.md para el registro de pruebas y salida esperada.
 
-Reporte recomendado de pruebas:
-- Captura del endpoint /api/dashboard en ejecucion.
-- Captura de salida de npm test.
-- Log corto de despliegue exitoso en plataforma nube.
 
 ### Capturas en README
 
