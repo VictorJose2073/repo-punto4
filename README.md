@@ -124,14 +124,6 @@ Reporte recomendado de pruebas:
 - Log corto de despliegue exitoso en plataforma nube.
 
 ### Capturas en README
-Guarda tus capturas en docs/img con estos nombres:
-- endpoint-home.png
-- endpoint-health.png
-- endpoint-dashboard.png
-- test-output.png
-- ostiachaval.png
-
-Luego se veran aqui:
 
 ![Respuesta GET /](docs/img/endpoint-home.png)
 
